@@ -1,0 +1,19 @@
+@use "../abstracts/mixins" as m;
+@use "../abstracts/breakpoints" as bp;
+
+.header {
+    @include bp.min(lg) {
+        @include m.p(xl);
+    }
+
+    &-logo {
+        width: 200px;
+    }
+
+    .btn {
+        @include bp.min(lg) {
+            @include m.p(xl, x);
+            @include m.p(sm, y);
+        }
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "name": "huddle-landing-page-1",
+    "version": "1.0.0",
+    "description": "This is a solution to the [Huddle landing page with alternating feature blocks challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/huddle-landing-page-with-alternating-feature-blocks-5ca5f5981e82137ec91a5100). Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
+    "main": "index.js",
+    "scripts": {
+        "watch": "npx sass --watch assets/scss/main.scss assets/css/main.css",
+        "start": "npx live-server"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Lau-San/fm-huddle-landing-page-1.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Lau-San/fm-huddle-landing-page-1/issues"
+    },
+    "homepage": "https://github.com/Lau-San/fm-huddle-landing-page-1#readme",
+    "devDependencies": {
+        "autoprefixer": "^10.4.12",
+        "browser-sync": "^2.27.10",
+        "cssnano": "^5.1.13",
+        "gulp": "^4.0.2",
+        "gulp-postcss": "^9.0.1",
+        "gulp-sass": "^5.1.0",
+        "sass": "^1.55.0"
+    },
+    "browserslist": [
+        "last 2 versions"
+    ]
+}

@@ -1,0 +1,54 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/breakpoints" as bp;
+@use "../abstracts/mixins" as m;
+
+.features-section {
+    @include bp.min(md) {
+        @include m.p("3xl", t);
+        @include m.p("2xl", x);
+    }
+}
+
+.feature-card {
+    @include bp.min(md) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        text-align: start;
+        @include m.p(lg, r);
+        @include m.g("3xl");
+    }
+
+    &-image {
+        grid-column: -2;
+        grid-row: 1;
+    }
+
+    &-description {
+        grid-column: 1;
+        grid-row: 1;
+
+        h2 {
+            @include bp.min(md) {
+                margin-top: 0;
+            }
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+
+    &[data-reversed] {
+        @include bp.min(md) {
+            .feature-card-image {
+                grid-column: 1;
+            }
+
+            .feature-card-description {
+                grid-column: -2;
+            }
+        }
+    }
+}

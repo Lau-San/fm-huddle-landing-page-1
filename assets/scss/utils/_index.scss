@@ -1,0 +1,29 @@
+@forward "spacing";
+@forward "position";
+@forward "sizing";
+@forward "transform";
+@forward "shadow";
+@forward "text";
+@forward "background";
+
+// TODO Remove this
+
+$dbg-1: red;
+$dbg-2: blue;
+$dbg-1-bg: rgba($dbg-1, 0.2);
+$dbg-2-bg: rgba($dbg-2, 0.2);
+
+.debug {
+    background-color: $dbg-1-bg;
+    border: 1px solid $dbg-1;
+}
+
+.debug-children > * {
+    background-color: $dbg-2-bg;
+    border: 1px solid $dbg-2;
+}
+
+.debug-all {
+    @extend .debug;
+    @extend .debug-children;
+}

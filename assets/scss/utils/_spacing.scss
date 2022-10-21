@@ -1,0 +1,16 @@
+@use "sass:map";
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+@each $size-name in v.$size-names {
+    @include m.padding($size-name);
+    @include m.margin($size-name);
+    @include m.gap($size-name);
+}
+
+@each $side-key in map.keys(v.$sides) {
+    @each $size-name in v.$size-names {
+        @include m.padding($size-name, $side-key);
+        @include m.margin($size-name, $side-key);
+    }
+}

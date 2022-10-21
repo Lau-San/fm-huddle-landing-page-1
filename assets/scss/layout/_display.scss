@@ -1,0 +1,36 @@
+@use "../abstracts/breakpoints" as bp;
+
+.flex {
+    display: flex;
+
+    &-col {
+        @extend .flex;
+        flex-direction: column;
+    }
+}
+
+.grid {
+    display: grid;
+
+    &.cols {
+        --cols: 1;
+
+        grid-template-columns: repeat(var(--cols), 1fr);
+
+        &-2 {
+            @extend .cols;
+
+            @include bp.min(lg) {
+                --cols: 2;
+            }
+        }
+
+        &-3 {
+            @extend .cols;
+
+            @include bp.min(lg) {
+                --cols: 3;
+            }
+        }
+    }
+}

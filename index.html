@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/images/favicon-32x32.png"
+        />
+
+        <title>
+            Frontend Mentor | Huddle landing page with alternating feature
+            blocks
+        </title>
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- FontAwesome -->
+        <script
+            src="https://kit.fontawesome.com/4099d2c8af.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <link rel="stylesheet" href="./assets/css/main.css" />
+    </head>
+
+    <body>
+        <!-- HEADER SECTION -->
+
+        <header
+            class="header | absolute z-top w-max flex items-center justify-between p-lg"
+        >
+            <img
+                class="header-logo"
+                src="./assets/images/logo.svg"
+                alt="Huddle"
+            />
+            <button
+                class="btn | shadow-y-sm shadow-b-md shadow-100 px-lg py-xs bold"
+                data-type="secondary"
+            >
+                Try It Free
+            </button>
+        </header>
+
+        <main class="relative pb-4xl text-center">
+            <!-- HERO SECTION -->
+
+            <div
+                class="hero | pt-3xl pb-xl px-xl flex-col items-center gap-2xl"
+            >
+                <div class="hero-intro | flex-col items-center gap-lg">
+                    <h1 class="w-90">
+                        Build The Community Your Fans Will Love
+                    </h1>
+                    <p>
+                        Huddle re-imagines the way we build communities. You
+                        have a voice, but so does your audience. Create
+                        connections with your users as you engage in genuine
+                        discussion.
+                    </p>
+                    <button
+                        class="btn | px-2xl py-md shadow-y-sm shadow-b-md shadow-400 text-lg bold"
+                        data-type="primary"
+                    >
+                        Get Started For Free
+                    </button>
+                </div>
+
+                <img src="./assets/images/illustration-mockups.svg" alt="" />
+            </div>
+
+            <!-- FEATURES SECTION -->
+
+            <section class="features-section | flex-col gap-xl px-lg py-2xl">
+                <div
+                    class="feature-card | card | bg-white shadow-b-lg shadow-100 flex-col gap-xl p-2xl pb-xl"
+                >
+                    <img
+                        class="feature-card-image"
+                        src="./assets/images/illustration-grow-together.svg"
+                        alt=""
+                    />
+                    <div class="feature-card-description">
+                        <h2>Grow Together</h2>
+                        <p class="text-neutral-400 mt-md">
+                            Generate meaningful discussions with your audience
+                            and build a strong, loyal community. Think of the
+                            insightful conversations you miss out on with a
+                            feedback form.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="feature-card | card | bg-white shadow-b-lg shadow-100 flex-col gap-xl p-2xl pb-xl"
+                    data-reversed
+                >
+                    <img
+                        class="feature-card-image"
+                        src="./assets/images/illustration-flowing-conversation.svg"
+                        alt=""
+                    />
+                    <div class="feature-card-description">
+                        <h2 class="mt-xl">Flowing Conversations</h2>
+                        <p class="text-neutral-400 mt-md">
+                            You wouldn't paginate a conversation in real life,
+                            so why do it online? Our threads have just-in-time
+                            loading for a more natural flow.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="feature-card | card | bg-white shadow-b-lg shadow-100 flex-col gap-xl p-2xl pb-xl"
+                >
+                    <img
+                        class="feature-card-image"
+                        src="./assets/images/illustration-your-users.svg"
+                        alt=""
+                    />
+                    <div class="feature-card-description">
+                        <h2 class="mt-xl">Your Users</h2>
+                        <p class="text-neutral-400 mt-md">
+                            It takes no time at all to integrate Huddle with
+                            your app's authentication solution. This means, once
+                            signed in to your app, your users can start chatting
+                            immediately.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <div
+                class="end-card | card | bg-white shadow-100 shadow-b-lg flex-col items-center gap-lg w-90 px-md py-xl absolute bottom-0 left-50 translate-x--50 translate-y-40"
+            >
+                <h2>Ready To Build Your Community?</h2>
+                <button
+                    class="btn | shadow-y-sm shadow-b-lg shadow-300 bold px-2xl py-md"
+                    data-type="primary"
+                >
+                    Get Started For Free
+                </button>
+            </div>
+        </main>
+
+        <footer class="footer | bg-neutral-900 pt-3xl pb-2xl px-lg">
+            <img
+                class="footer-logo | mt-xl"
+                src="./assets/images/logo.svg"
+                alt=""
+            />
+
+            <div class="footer-content | grid gap-xl mt-lg">
+                <div class="footer-info | flex-col gap-md">
+                    <p class="footer-location">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua
+                    </p>
+                    <p class="footer-phone">+1-543-123-4567</p>
+                    <p class="footer-email">example@huddle.com</p>
+                </div>
+
+                <div class="footer-links | grid gap-lg">
+                    <a href="#">About Us</a>
+                    <a href="#">What We Do</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Career</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact Us</a>
+                </div>
+
+                <div
+                    class="footer-end | flex-col gap-lg items-center justify-between"
+                >
+                    <div class="footer-social | flex justify-center gap-md">
+                        <a href="#"
+                            ><i class="social | fa-brands fa-facebook-f"></i
+                        ></a>
+                        <a href="#"
+                            ><i class="social | fa-brands fa-twitter"></i
+                        ></a>
+                        <a href="#"
+                            ><i class="social | fa-brands fa-instagram"></i
+                        ></a>
+                    </div>
+
+                    <div class="footer-copy | text-sm">
+                        &copy; Copyright 2018 Huddle. All rights reserved.
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Try It Free
+  
+  TODO Add this
+  -->
+    </body>
+</html>

@@ -1,0 +1,8 @@
+@use "sass:math";
+
+@function px-to-rem($pixels) {
+  @if not math.is-unitless($pixels) {
+    @error '$pixels cannot have a unit';
+  }
+  @return math.div($pixels, 18) * 1rem;
+}

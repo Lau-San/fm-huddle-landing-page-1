@@ -1,0 +1,22 @@
+.translate {
+    --x: 0;
+    --y: 0;
+
+    transform: translate(var(--x), var(--y));
+
+    &-x {
+        &--50 {
+            @extend .translate;
+            --x: -50%;
+            // transform: translateX(50%);
+        }
+    }
+
+    &-y {
+        &-40 {
+            @extend .translate;
+            --y: 40%;
+            // transform: translateY(40%);
+        }
+    }
+}

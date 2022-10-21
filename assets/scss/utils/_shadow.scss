@@ -1,0 +1,42 @@
+.shadow {
+    box-shadow:
+        var(--shadow-x, 0)
+        var(--shadow-y, 0)
+        var(--shadow-blur, 0px)
+        var(--shadow-spread, 0px)
+        var(--shadow-color, #000);
+
+    &-y {
+        &-sm {
+            @extend .shadow;
+            --shadow-y: 3px;
+        }
+    }
+
+    &-b {
+        &-md {
+            @extend .shadow;
+            --shadow-blur: 10px;
+        }
+
+        &-lg {
+            @extend .shadow;
+            --shadow-blur: 20px;
+        }
+    }
+
+    &-100 {
+        @extend .shadow;
+        --shadow-color: var(--clr-shadow-100);
+    }
+
+    &-300 {
+        @extend .shadow;
+        --shadow-color: var(--clr-shadow-300);
+    }
+
+    &-400 {
+        @extend .shadow;
+        --shadow-color: var(--clr-shadow-400);
+    }
+}

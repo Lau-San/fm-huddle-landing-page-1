@@ -1,0 +1,13 @@
+@use "../abstracts/breakpoints" as bp;
+@use "../abstracts/mixins" as m;
+
+.end-card {
+    width: clamp(675px, 90%, 950px);
+
+    .btn {
+        @include bp.min(lg) {
+            // @include m.p(lg, y);
+            font-size: 1.2rem;
+        }
+    }
+}

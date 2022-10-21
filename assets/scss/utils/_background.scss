@@ -1,0 +1,19 @@
+.bg {
+    &-white {
+        background-color: #fff;
+    }
+
+    &-neutral {
+        &-100 {
+            background-color: var(--clr-neutral-100);
+        }
+
+        &-400 {
+            background-color: var(--clr-neutral-400);
+        }
+
+        &-900 {
+            background-color: var(--clr-neutral-900);
+        }
+    }
+}

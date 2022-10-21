@@ -1,0 +1,50 @@
+@use "sass:map";
+@use "variables" as v;
+
+@mixin p($size, $sides: false) {
+    @if not $sides {
+        padding: map.get(v.$spacing, $size);
+    } @else {
+        padding-#{map.get(v.$sides, $sides)}: map.get(v.$spacing, $size);
+    }
+}
+
+@mixin g($size) {
+    gap: map.get(v.$spacing, $size);
+}
+
+// Class generators
+
+@mixin padding($size, $sides: false) {
+    @if not $sides {
+        // Generate class that affects all sides
+        .p-#{$size} {
+            padding: map.get(v.$spacing, $size);
+        }
+    } @else {
+        // Generate class that affects the specified side(s)
+        .p#{$sides}-#{$size} {
+            padding-#{map.get(v.$sides, $sides)}: map.get(v.$spacing, $size);
+        }
+    }
+}
+
+@mixin margin($size, $sides: false) {
+    @if not $sides {
+        // Generate class that affects all sides
+        .m-#{$size} {
+            margin: map.get(v.$spacing, $size);
+        }
+    } @else {
+        // Generate class that affects the specified side(s)
+        .m#{$sides}-#{$size} {
+            margin-#{map.get(v.$sides, $sides)}: map.get(v.$spacing, $size);
+        }
+    }
+}
+
+@mixin gap($size) {
+    .gap-#{$size} {
+        gap: map.get(v.$spacing, $size);
+    }
+}

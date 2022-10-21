@@ -1,0 +1,26 @@
+$sides: (
+    "x": "inline",
+    "y": "block",
+    "t": "top",
+    "b": "bottom",
+    "l": "left",
+    "r": "right"
+);
+
+// SIZES
+
+$size-names: "xs", "sm", "md", "lg", "xl", "2xl", "3xl", "4xl";
+
+$spacing: (
+    "xs": 0.4rem,
+    "sm": 0.5rem,
+    "md": 1rem,
+    "lg": 2rem,
+    "xl": 4rem,
+    "2xl": 6rem,
+    "3xl": 10rem,
+    "4xl": 16rem
+);
+
+// COLORS
+$clr-pink: hsl(322, 100%, 66%);

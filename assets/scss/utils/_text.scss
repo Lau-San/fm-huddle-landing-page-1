@@ -1,0 +1,21 @@
+.text {
+    &-neutral-400 {
+        color: var(--clr-neutral-400);
+    }
+
+    &-center {
+        text-align: center;
+    }
+
+    &-sm {
+        font-size: 0.8rem;
+    }
+
+    &-lg {
+        font-size: 1.2rem;
+    }
+}
+
+.bold {
+    font-weight: 700;
+}

@@ -1,0 +1,29 @@
+@use "sass:color";
+@use "../abstracts/variables" as v;
+
+.btn {
+    border: none;
+    border-radius: 99999px;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    cursor: pointer;
+
+    &[data-type="primary"] {
+        background-color: var(--clr-pink);
+        color: white;
+    }
+
+    &[data-type="secondary"] {
+        background-color: white;
+    }
+
+    &:hover {
+        &[data-type="primary"] {
+            // filter: brightness(1.3) saturate(0.7);
+            background-color: color.adjust(v.$clr-pink, $lightness: 10%);
+        }
+
+        &[data-type="secondary"] {
+            color: var(--clr-neutral-400);
+        }
+    }
+}
